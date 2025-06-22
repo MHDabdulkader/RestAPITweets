@@ -36,7 +36,7 @@ public class Media {
 
     @ManyToOne
     @JoinColumn(name = "tweet_id")
-    private Tweets tweet;
+    private Tweets tweets;
 
 
 }

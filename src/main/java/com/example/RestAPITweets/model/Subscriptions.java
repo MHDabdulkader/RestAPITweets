@@ -12,14 +12,14 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "subscription")
+@Table(name = "subscriptions")
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Subscription {
+public class Subscriptions {
     @Id
     @GeneratedValue(strategy =  GenerationType.UUID)
     private UUID id;
@@ -34,5 +34,5 @@ public class Subscription {
 
     @OneToOne
     @JoinColumn(name = "user_id")
-    private Users user;
+    private Users users;
 }

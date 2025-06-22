@@ -31,9 +31,9 @@ public class Likes {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private Users user;
+    private Users users;
 
     @ManyToOne
     @JoinColumn(name = "tweet_id")
-    private Tweets tweet;
+    private Tweets tweets;
 }
