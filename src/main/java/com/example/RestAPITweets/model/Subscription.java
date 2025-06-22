@@ -33,5 +33,6 @@ public class Subscription {
     private LocalDateTime updateAt;
 
     @OneToOne
-    private Users users;
+    @JoinColumn(name = "user_id")
+    private Users user;
 }

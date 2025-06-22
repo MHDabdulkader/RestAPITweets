@@ -35,8 +35,8 @@ public class Media {
     private LocalDateTime updateAt;
 
     @ManyToOne
-    @JoinColumn(name = "tweets_id")
-    private Tweets tweets;
+    @JoinColumn(name = "tweet_id")
+    private Tweets tweet;
 
 
 }

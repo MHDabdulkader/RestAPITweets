@@ -32,12 +32,12 @@ public class Comments {
     private LocalDateTime updateAt;
 
     @ManyToOne
-    @JoinColumn(name = "users_id")
-    private Users users;
+    @JoinColumn(name = "user_id")
+    private Users user;
 
     @ManyToOne
-    @JoinColumn(name = "tweets_id")
-    private Tweets tweets;
+    @JoinColumn(name = "tweet_id")
+    private Tweets tweet;
 
 
 }
