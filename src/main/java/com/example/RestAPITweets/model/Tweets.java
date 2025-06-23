@@ -39,7 +39,7 @@ public class Tweets {
     @JoinColumn(name = "user_id")
     private Users users;
 
-    @OneToMany(mappedBy = "tweets", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "tweets", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Media> media = new ArrayList<>();
 
     @OneToMany(mappedBy = "tweets", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
